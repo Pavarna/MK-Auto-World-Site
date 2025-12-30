@@ -9,7 +9,7 @@ export const Contact = () => {
     const data = new FormData(form);
 
     // Send to Formspree via Fetch
-    const response = await fetch("https://formspree.io/f/YOUR_ID", {
+    const response = await fetch("https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },

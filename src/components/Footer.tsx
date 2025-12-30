@@ -47,7 +47,7 @@ export const Footer = () => {
           </h4>
           <ul className="text-sm space-y-2 text-blue-100">
             <li>📞 +91 89254 05656</li>
-            <li>✉️ sales@mkautoworld.com</li>
+            <li>📧 mkautoworldx@gmail.com</li>
             <li>📸 @mk.autoworld</li>
           </ul>
         </div>
