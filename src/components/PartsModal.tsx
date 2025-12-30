@@ -29,6 +29,39 @@ export const PartsModal = ({ isOpen, onClose, brandName, parts }: Props) => {
         </div>
 
         <ul className="p-6 space-y-3">
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <span className="bg-brandBlue text-white rounded-full p-1 mt-1">
+                <svg
+                  className="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                </svg>
+              </span>
+              <span className="text-gray-800">
+                <strong>Custom Sourcing:</strong> If you need it, we find it. We
+                deliver all automotive parts as per your specific order.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="bg-brandBlue text-white rounded-full p-1 mt-1">
+                <svg
+                  className="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                </svg>
+              </span>
+              <span className="text-gray-800">
+                <strong>
+                  All types of parts, as per your order, will be delivered.
+                </strong>
+              </span>
+            </li>
+          </ul>
           {parts.map((part, index) => (
             <li key={index} className="flex items-center gap-3 text-gray-700">
               <span className="w-2 h-2 bg-blue-500 rounded-full"></span>

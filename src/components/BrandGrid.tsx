@@ -22,9 +22,9 @@ export const BrandGrid = ({ onBrandClick }: BrandGridProps) => {
               {/* Real Brand Logo Container */}
               <div className="h-20 w-full flex items-center justify-center mb-6">
                 <img
-                  src={`/logos/${brand.logo}`} // Automatically looks in public/logos/
+                  src={`/logos/${brand.logo}`}
                   alt={`${brand.name} logo`}
-                  className="max-h-full max-w-[80%] object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="max-h-full max-w-[80%] transition-all duration-500"
                 />
               </div>
 
