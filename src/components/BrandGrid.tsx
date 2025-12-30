@@ -19,9 +19,9 @@ export const BrandGrid = ({ onBrandClick }: BrandGridProps) => {
               onClick={() => onBrandClick(brand)} // This triggers the modal in App.tsx
               className="p-4 md:p-8 group cursor-pointer bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
-             {/* Real Brand Logo Container */}
+              {/* Real Brand Logo Container */}
               <div className="h-20 w-full flex items-center justify-center mb-6">
-                <img 
+                <img
                   src={`/logos/${brand.logo}`} // Automatically looks in public/logos/
                   alt={`${brand.name} logo`}
                   className="max-h-full max-w-[80%] object-contain grayscale group-hover:grayscale-0 transition-all duration-500"

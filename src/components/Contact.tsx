@@ -39,10 +39,19 @@ export const Contact = () => {
           <div>
             <p className="text-gray-500">Follow Us</p>
             <a
-              href="https://instagram.com/mk.autoworld?igsh=MWFuamdsbG45bW1kcA%3D%3D"
+              href="https://www.instagram.com/mk.autoworld/"
               className="text-xl font-semibold flex items-center gap-2 hover:text-pink-600 transition"
             >
               <span>Instagram: @mk.autoworld</span>
+            </a>
+          </div>
+          <div className="mt-4 text-center">
+            <p className="text-gray-500 text-sm">Prefer a faster response?</p>
+            <a
+              href="https://wa.me/918925405656?text=Hi MK Auto World, I am looking for spare parts."
+              className="text-green-600 font-bold flex items-center justify-center gap-2"
+            >
+              Chat on WhatsApp
             </a>
           </div>
         </div>
@@ -53,10 +62,7 @@ export const Contact = () => {
           </div>
         ) : (
           <div className="md:w-2/3 bg-brandLight p-10 rounded-2xl shadow-inner">
-            <form
-              className="space-y-4"
-              onSubmit={handleSubmit}
-            >
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"
@@ -76,12 +82,13 @@ export const Contact = () => {
               <textarea
                 name="message"
                 rows={4}
+                required
                 placeholder="Parts Inquiry (Please include Brand & Year)"
                 className="w-full p-3 rounded-lg border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-brandBlue outline-none"
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-brandBlue text-white py-4 rounded-lg font-bold hover:bg-blue-900 transition shadow-lg"
+                className="w-full text-brandBlue py-4 rounded-lg font-bold hover:bg-blue-900 transition shadow-lg"
               >
                 Send Message
               </button>
