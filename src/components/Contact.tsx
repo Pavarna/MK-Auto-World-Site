@@ -9,6 +9,7 @@ export const Contact = () => {
     const data = new FormData(form);
 
     // Send to Formspree via Fetch
+    console.log("Sending to:", `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`);
     const response = await fetch(
       `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`,
       {
