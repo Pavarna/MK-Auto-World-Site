@@ -9,11 +9,14 @@ export const Contact = () => {
     const data = new FormData(form);
 
     // Send to Formspree via Fetch
-    const response = await fetch("https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}", {
-      method: "POST",
-      body: data,
-      headers: { Accept: "application/json" },
-    });
+    const response = await fetch(
+      `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`,
+      {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      }
+    );
 
     if (response.ok) {
       setIsSubmitted(true);
