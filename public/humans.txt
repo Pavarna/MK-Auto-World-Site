@@ -1,0 +1,15 @@
+/* TEAM */
+Developer & Designer: Pavarna
+Contact: https://www.linkedin.com/in/pavarna-s-7b99911b1/
+Location: Coimbatore, India
+
+/* SITE */
+Last update: 2025/12/31
+Standards: HTML5, React, TypeScript Tailwind CSS
+
+/* SOFTWARE STACK */
+Framework: React 19
+Language: TypeScript
+Styling: Tailwind CSS
+Deployment: Vercel
+Forms: Formspree

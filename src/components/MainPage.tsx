@@ -4,30 +4,35 @@ export const MainPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-gradient-to-r from-brandBlue to-blue-800 text-white pt-32 pb-20 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-gradient-to-r from-brandBlue to-blue-800 text-white pt-16 pb-10 px-6">
+      <div className="max-w-[95%] mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
             Genuine Spare Parts for{" "}
             <span className="text-blue-300">All Brands</span>.
           </h1>
-          <div className="space-y-2">
+          <div className="space-y-4">
             <p className="text-xs font-mono text-blue-300">
               GSTIN: 33ALMPR6908D1ZZ
             </p>
-            <p className="text-lg opacity-90 leading-relaxed">
-              OEM & Aftermarket Auto Parts Supplier - Reliable Sourcing for all your requirements.<br/>
-              Quality parts for every road, every journey.
+            <p className="text-lg italic opacity-90 leading-relaxed">
+              We deliver high-quality parts that keep workshops and retailers
+              ahead. Our nationwide network ensures you get the right parts,
+              right when you need them.
+              <br />
+              <p className="text-white mt-4 text-lg italic">
+                OEM & Aftermarket Auto Parts Supplier - Reliable Sourcing for
+                all your requirements.
+              </p>
+              <br />
             </p>
           </div>
-          <div className="pt-4">
-            <a
-              href="#contact"
-              className="inline-block bg-white text-brandBlue px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition shadow-lg"
-            >
-              Inquire Now
-            </a>
-          </div>
+          <a
+            href="#contact"
+            className="inline-block bg-white text-brandBlue px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition shadow-lg"
+          >
+            Inquire Now
+          </a>
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center items-center">
@@ -44,9 +49,12 @@ export const MainPage = () => {
                 className="w-full h-auto rounded-xl object-contain"
               />
               <div className="absolute bottom-4 right-4 bg-black/50 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition">
-                Click to Expand
+                Click to view Business Card
               </div>
             </div>
+            <p className="text-white-500 mt-4 text-sm italic">
+              Quality parts for every road, every journey.
+            </p>
           </div>
         </div>
         {isOpen && (
@@ -69,7 +77,8 @@ export const MainPage = () => {
               />
 
               <p className="mt-4 text-blue-200 font-semibold italic text-center">
-                MK Auto World - Genuine OEM & Aftermarket Auto Parts Supplier - Reliable Sourcing for all your requirements.
+                MK Auto World - Genuine OEM & Aftermarket Auto Parts Supplier -
+                Reliable Sourcing for all your requirements.
               </p>
             </div>
           </div>

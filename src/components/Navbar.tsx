@@ -71,7 +71,7 @@ export const Navbar = () => {
                   setIsCardModalOpen(true);
                   setIsOpen(false);
                 }}
-                className="text-left text-lg py-2"
+                className="text-center text-lg py-2"
               >
                 View Business Card
               </button>

@@ -12,8 +12,7 @@ export const Footer = () => {
             MK AUTO WORLD
           </h3>
           <p className="text-blue-200 text-sm">
-            MK Auto World: Genuine Multi-Brand Spare Parts. Quality you can
-            trust.
+            Genuine Multi-Brand Spare Parts. Quality you can trust.
           </p>
           <div className="pt-2">
             <span className="text-[10px] uppercase tracking-widest text-blue-300 block">
@@ -116,7 +115,16 @@ export const Footer = () => {
       </div>
 
       <div className="mt-12 pt-6 border-t border-blue-900 text-center text-[11px] text-blue-400">
-        © 2026 MK Auto World. All Rights Reserved. Designed by Pavarna.
+        © 2026 MK Auto World. All Rights Reserved. Designed by{" "}
+        <a
+          href="https://www.linkedin.com/in/pavarna-s-7b99911b1/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition-colors underline decoration-blue-800 underline-offset-2"
+        >
+          Pavarna
+        </a>
+        .
       </div>
 
       {/* --- MODAL FOR BUSINESS CARD --- */}
