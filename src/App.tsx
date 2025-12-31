@@ -29,7 +29,6 @@ function App() {
         isOpen={!!selectedBrand}
         onClose={() => setSelectedBrand(null)}
         brandName={selectedBrand?.name || ""}
-        parts={selectedBrand?.parts || []}
       />
 
       <Footer />

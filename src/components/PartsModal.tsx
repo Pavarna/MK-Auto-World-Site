@@ -2,10 +2,9 @@ interface Props {
   isOpen: boolean;
   onClose: () => void;
   brandName: string;
-  parts: string[];
 }
 
-export const PartsModal = ({ isOpen, onClose, brandName, parts }: Props) => {
+export const PartsModal = ({ isOpen, onClose, brandName }: Props) => {
   if (!isOpen) return null;
 
   return (
@@ -62,12 +61,6 @@ export const PartsModal = ({ isOpen, onClose, brandName, parts }: Props) => {
               </span>
             </li>
           </ul>
-          {parts.map((part, index) => (
-            <li key={index} className="flex items-center gap-3 text-gray-700">
-              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-              {part}
-            </li>
-          ))}
         </ul>
 
         <div className="p-4 bg-gray-50 text-center">

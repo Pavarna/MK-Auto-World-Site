@@ -9,7 +9,10 @@ export const Contact = () => {
     const data = new FormData(form);
 
     // Send to Formspree via Fetch
-    console.log("Sending to:", `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`);
+    console.log(
+      "Sending to:",
+      `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`
+    );
     const response = await fetch(
       `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`,
       {
@@ -37,7 +40,7 @@ export const Contact = () => {
               href="tel:+1234567890"
               className="text-2xl font-bold text-blue-600 hover:underline"
             >
-              +91 89254 05656
+              +91 86107 35933
             </a>
           </div>
           <div>
@@ -66,33 +69,63 @@ export const Contact = () => {
           </div>
         ) : (
           <div className="md:w-2/3 bg-brandLight p-10 rounded-2xl shadow-inner">
-            <form className="space-y-4" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                  className="p-3 rounded-lg border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-brandBlue outline-none"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  required
-                  className="p-3 rounded-lg border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-brandBlue outline-none"
-                />
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="flex flex-col gap-1.5">
+                  <label
+                    htmlFor="name"
+                    className="text-sm font-semibold text-brandBlue-700 ml-1"
+                  >
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="e.g. Manav Samant"
+                    required
+                    className="p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <label
+                    htmlFor="email"
+                    className="text-sm font-semibold text-brandBlue-700 ml-1"
+                  >
+                    Email Address <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="name@company.com"
+                    required
+                    className="p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
+                  />
+                </div>
               </div>
-              <textarea
-                name="message"
-                rows={4}
-                required
-                placeholder="Parts Inquiry (Please include Brand & Year)"
-                className="w-full p-3 rounded-lg border-none ring-1 ring-gray-200 focus:ring-2 focus:ring-brandBlue outline-none"
-              ></textarea>
+
+              <div className="flex flex-col gap-1.5">
+                <label
+                  htmlFor="message"
+                  className="text-sm font-semibold text-brandBlue-700 ml-1"
+                >
+                  Parts Inquiry <span className="text-red-500">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  required
+                  placeholder="Please include Brand, Model, and Year (e.g. BMW 3 Series 2018 Brake Pads)"
+                  className="w-full p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
+                ></textarea>
+              </div>
+
               <button
                 type="submit"
-                className="w-full text-brandBlue py-4 rounded-lg font-bold hover:bg-blue-900 transition shadow-lg"
+                className="w-full bg-brandBlue text-brandBlue py-4 rounded-lg font-bold hover:bg-blue-900 transition shadow-lg mt-2"
               >
                 Send Message
               </button>

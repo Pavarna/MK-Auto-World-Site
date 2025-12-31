@@ -31,12 +31,9 @@ export const BrandGrid = ({ onBrandClick }: BrandGridProps) => {
               <h3 className="font-bold text-xl mb-2 text-brandBlue">
                 {brand.name}
               </h3>
-              <p className="text-gray-500 text-sm">
-                Click to view available spare parts
-              </p>
 
               <div className="mt-4 text-blue-500 font-semibold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                View Parts →
+                View Details →
               </div>
             </div>
           ))}
