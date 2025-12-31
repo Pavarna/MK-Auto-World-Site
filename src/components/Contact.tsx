@@ -55,7 +55,7 @@ export const Contact = () => {
           <div className="mt-4 text-center">
             <p className="text-gray-500 text-sm">Prefer a faster response?</p>
             <a
-              href="https://wa.me/918925405656?text=Hi MK Auto World, I am looking for spare parts."
+              href="https://wa.me/918610735933?text=Hi MK Auto World, I am looking for spare parts."
               className="text-green-600 font-bold flex items-center justify-center gap-2"
             >
               Chat on WhatsApp

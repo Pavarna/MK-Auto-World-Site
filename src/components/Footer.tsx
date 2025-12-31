@@ -102,7 +102,7 @@ export const Footer = () => {
             <li className="flex items-center gap-3">
               <span className="text-green-500">💬</span>
               <a
-                href="https://wa.me/918925405656"
+                href="https://wa.me/918610735933"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-400 transition-colors font-bold"
