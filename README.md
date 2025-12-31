@@ -16,6 +16,8 @@ I built this professional web presence for **MK Auto World**, a premium multi-br
 * **📩 Automated Inquiries:** Integrated **Formspree** for the contact form, allowing users to submit parts inquiries that are instantly routed to the business email without a custom backend.
 * **📲 High-Friction Reduction:** One-tap connectivity via **WhatsApp API**, **Tel links**, and **Social Media** navigation to maximize lead generation.
 * **🔍 Technical SEO:** Optimized for search engines using semantic HTML and indexed via **Google Search Console** to ensure local search visibility.
+* **XML Sitemap**: Created `sitemap.xml` to help Google index the site structure efficiently.
+* **Robots.txt**: Configured `robots.txt` to manage crawler access and point to the sitemap.
 
 ## 🛠️ Tech Stack
 
