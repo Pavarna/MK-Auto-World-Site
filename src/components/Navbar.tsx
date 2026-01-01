@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { CardModal } from "./CardModal";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // For mobile menu
@@ -23,6 +24,9 @@ export const Navbar = () => {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8 font-semibold text-brandBlue uppercase text-sm">
+            <a href="#about" className="hover:text-blue-500 transition">
+              About Us
+            </a>
             <a href="#brands" className="hover:text-blue-500 transition">
               Brands
             </a>
@@ -52,6 +56,13 @@ export const Navbar = () => {
           <div className="md:hidden absolute top-full left-0 w-full bg-white border-b shadow-xl animate-in slide-in-from-top duration-300">
             <div className="flex flex-col p-6 space-y-4 font-bold text-brandBlue">
               <a
+                href="#about"
+                onClick={() => setIsOpen(false)}
+                className="text-lg py-2 border-b border-gray-50"
+              >
+                About Us
+              </a>
+              <a
                 href="#brands"
                 onClick={() => setIsOpen(false)}
                 className="text-lg py-2 border-b border-gray-50"
@@ -76,7 +87,7 @@ export const Navbar = () => {
                 View Business Card
               </button>
               <div className="pt-4 text-xs text-gray-400 font-mono">
-                GSTIN: 33ALMPR6908D1ZZ
+                GSTIN: 33BVSPS1377N1ZP
               </div>
             </div>
           </div>
@@ -84,26 +95,10 @@ export const Navbar = () => {
       </nav>
 
       {/* --- BUSINESS CARD MODAL --- */}
-      {isCardModalOpen && (
-        <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 animate-in fade-in duration-300"
-          onClick={() => setIsCardModalOpen(false)}
-        >
-          <div className="relative max-w-2xl w-full">
-            <button
-              className="absolute -top-12 right-0 text-brandBlue hover:text-blue-400 text-lg font-bold"
-              onClick={() => setIsCardModalOpen(false)}
-            >
-              ✕ Close
-            </button>
-            <img
-              src="/logos/MKAutoWorldCard.jpeg"
-              alt="MK Auto World Card"
-              className="w-full h-auto rounded-xl shadow-2xl animate-in zoom-in-95 duration-300"
-            />
-          </div>
-        </div>
-      )}
+      <CardModal
+        isCardModalOpen={isCardModalOpen}
+        setIsCardModalOpen={setIsCardModalOpen}
+      />
     </>
   );
 };

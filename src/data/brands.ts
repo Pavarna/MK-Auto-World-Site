@@ -1,47 +1,42 @@
 export const BRANDS_DATA = [
   {
     id: "benz",
-    name: "Mercedes Benz",
-    logo: "benz logo.svg",
+    logo: "benz logo.jpg",
   },
   {
     id: "bmw",
-    name: "BMW",
     logo: "bmw logo.svg",
   },
   {
     id: "audi",
-    name: "Audi",
-    logo: "audi logo.svg",
+    logo: "audi logo.png",
   },
   {
     id: "volvo",
-    name: "Volvo",
     logo: "volvo logo.svg",
   },
   {
+    id: "volkswagen",
+    logo: "vw logo.png",
+  },
+  {
     id: "skoda",
-    name: "Skoda",
     logo: "skoda logo.svg",
   },
   {
     id: "mg",
-    name: "MG",
     logo: "mg logo.png",
   },
   {
     id: "honda",
-    name: "Honda",
-    logo: "honda logo.svg",
+    logo: "honda logo.png",
   },
   {
     id: "tata",
-    name: "TATA",
-    logo: "tata logo.svg",
+    logo: "tata logo.png",
   },
    {
     id: "suzuki",
-    name: "Suzuki",
     logo: "suzuki logo.svg",
   },
 ];

@@ -32,18 +32,21 @@ export const Contact = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12">
         {/* Contact Info */}
-        <div className="md:w-1/3 space-y-8">
+        <div className="md:w-1/3 space-y-8 flex flex-col items-center md:items-start text-center md:text-left">
           <h2 className="text-3xl font-bold text-brandBlue">Get in Touch</h2>
+
           <div>
             <p className="text-gray-500">Call Us</p>
             <a
-              href="tel:+1234567890"
+              href="tel:+918610735933"
               className="text-2xl font-bold text-blue-600 hover:underline"
             >
               +91 86107 35933
             </a>
           </div>
-          <div>
+
+          {/* Follow Us Section */}
+          <div className="flex flex-col items-center md:items-start">
             <p className="text-gray-500">Follow Us</p>
             <a
               href="https://www.instagram.com/mk.autoworld/"
@@ -52,13 +55,15 @@ export const Contact = () => {
               <span>Instagram: @mk.autoworld</span>
             </a>
           </div>
-          <div className="mt-4 text-center">
+
+          {/* WhatsApp Section */}
+          <div className="mt-4 flex flex-col items-center md:items-start">
             <p className="text-gray-500 text-sm">Prefer a faster response?</p>
             <a
-              href="https://wa.me/918610735933?text=Hi MK Auto World, I am looking for spare parts."
-              className="text-green-600 font-bold flex items-center justify-center gap-2"
+              href="https://wa.me/918610?text=Hi MK Auto World, I am looking for spare parts."
+              className="text-green-600 font-bold flex items-center gap-2"
             >
-              Chat on WhatsApp
+              <span>💬</span> Chat on WhatsApp
             </a>
           </div>
         </div>
@@ -82,7 +87,7 @@ export const Contact = () => {
                     id="name"
                     type="text"
                     name="name"
-                    placeholder="e.g. Manav Samant"
+                    placeholder="e.g. Rajesh Samant"
                     required
                     className="p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
                   />
@@ -111,7 +116,7 @@ export const Contact = () => {
                   htmlFor="message"
                   className="text-sm font-semibold text-brandBlue-700 ml-1"
                 >
-                  Parts Inquiry <span className="text-red-500">*</span>
+                  Parts Enquiry <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"

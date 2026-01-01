@@ -1,28 +1,32 @@
 import { useState } from "react";
+import { CardModal } from "./CardModal";
 
 export const MainPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="bg-gradient-to-r from-brandBlue to-blue-800 text-white pt-16 pb-10 px-6">
+    <section
+      id="about"
+      className="bg-gradient-to-r from-brandBlue to-blue-800 text-white pt-28 pb-24 px-6"
+    >
       <div className="max-w-[95%] mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-            Genuine Spare Parts for{" "}
+            Genuine Car Spare Parts for{" "}
             <span className="text-blue-300">All Brands</span>.
           </h1>
           <div className="space-y-4">
             <p className="text-xs font-mono text-blue-300">
-              GSTIN: 33ALMPR6908D1ZZ
+              GSTIN: 33BVSPS1377N1ZP
             </p>
             <p className="text-lg italic opacity-90 leading-relaxed">
-              We deliver high-quality parts that keep workshops and retailers
-              ahead. Our nationwide network ensures you get the right parts,
-              right when you need them.
+              We provide top-quality car parts to help workshops and retailers
+              succeed. With our nationwide delivery, you get the right parts
+              exactly when you need them.
               <br />
               <p className="text-white mt-4 text-lg italic">
-                OEM & Aftermarket Auto Parts Supplier - Reliable Sourcing for
-                all your requirements.
+                OEM & Aftermarket Car Parts Supplier - Reliable Sourcing for all
+                your requirements.
               </p>
               <br />
             </p>
@@ -31,7 +35,7 @@ export const MainPage = () => {
             href="#contact"
             className="inline-block bg-white text-brandBlue px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition shadow-lg"
           >
-            Inquire Now
+            Enquire Now
           </a>
         </div>
 
@@ -57,32 +61,7 @@ export const MainPage = () => {
             </p>
           </div>
         </div>
-        {isOpen && (
-          <div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-300"
-            onClick={() => setIsOpen(false)} // Close when clicking backdrop
-          >
-            <div className="relative max-w-4xl w-full flex flex-col items-center">
-              <button
-                className="absolute -top-12 right-0 text-black text-3xl font-bold hover:text-blue-300 transition"
-                onClick={() => setIsOpen(false)}
-              >
-                &times; Close
-              </button>
-
-              <img
-                src="/logos/MKAutoWorldCard.jpeg"
-                alt="MK Auto World Business Card Full View"
-                className="w-full h-auto rounded-lg shadow-2xl animate-in zoom-in-95 duration-300"
-              />
-
-              <p className="mt-4 text-blue-200 font-semibold italic text-center">
-                MK Auto World - Genuine OEM & Aftermarket Auto Parts Supplier -
-                Reliable Sourcing for all your requirements.
-              </p>
-            </div>
-          </div>
-        )}
+        <CardModal isCardModalOpen={isOpen} setIsCardModalOpen={setIsOpen} />
       </div>
     </section>
   );
