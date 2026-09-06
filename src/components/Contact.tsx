@@ -9,10 +9,6 @@ export const Contact = () => {
     const data = new FormData(form);
 
     // Send to Formspree via Fetch
-    console.log(
-      "Sending to:",
-      `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`
-    );
     const response = await fetch(
       `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`,
       {
@@ -50,9 +46,22 @@ export const Contact = () => {
             <p className="text-gray-500">Follow Us</p>
             <a
               href="https://www.instagram.com/mk.autoworld/"
+              target="_blank"
               className="text-xl font-semibold flex items-center gap-2 hover:text-pink-600 transition"
             >
               <span>Instagram: @mk.autoworld</span>
+            </a>
+          </div>
+
+           {/* Email Us Section */}
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-gray-500">Email Us</p>
+            <a
+              href="mailto:mkautoworldx@gmail.com"
+              target="_blank"
+              className="text-xl font-semibold flex items-center gap-2 hover:text-pink-600 transition"
+            >
+              <span>mkautoworldx@gmail.com</span>
             </a>
           </div>
 
@@ -96,6 +105,24 @@ export const Contact = () => {
 
                 <div className="flex flex-col gap-1.5">
                   <label
+                    htmlFor="contact"
+                    className="text-sm font-semibold text-brandBlue-700 ml-1"
+                  >
+                    Contact Number
+                  </label>
+                  <input
+                    id="contact"
+                    type="text"
+                    name="contact"
+                    placeholder="e.g. +91 98436 14241"
+                    required
+                    className="p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                  <label
                     htmlFor="email"
                     className="text-sm font-semibold text-brandBlue-700 ml-1"
                   >
@@ -105,11 +132,10 @@ export const Contact = () => {
                     id="email"
                     type="email"
                     name="email"
-                    placeholder="name@company.com"
+                    placeholder="mkautoworldx@gmail.com"
                     required
                     className="p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
                   />
-                </div>
               </div>
 
               <div className="flex flex-col gap-1.5">

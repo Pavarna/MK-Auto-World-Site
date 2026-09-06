@@ -32,10 +32,30 @@ export const BRANDS_DATA = [
     logo: "honda logo.png",
   },
   {
+    id: "mahindra",
+    logo: "mahindra logo.png",
+  },
+  {
+    id: "byd",
+    logo: "byd logo.png",
+  },
+  {
+    id: "ford",
+    logo: "ford logo.png",
+  },
+  {
+    id: "renault",
+    logo: "renault logo.png",
+  },
+  {
+    id: "nissan",
+    logo: "nissan logo.png",
+  },
+  {
     id: "tata",
     logo: "tata logo.png",
   },
-   {
+  {
     id: "suzuki",
     logo: "suzuki logo.svg",
   },

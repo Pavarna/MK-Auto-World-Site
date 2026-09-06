@@ -17,7 +17,7 @@ export const BrandGrid = () => {
           From Maruti to Mercedes, we provide spare parts for all major brands.
           MK Auto World is your complete partner for every repair.
         </p>
-        <div className="grid grid-cols-2 py-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 py-4 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8">
           {BRANDS_DATA.map((brand) => (
             <div
               key={brand.id}
