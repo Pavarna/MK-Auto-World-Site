@@ -52,7 +52,7 @@ export const Footer = () => {
                 href="tel:+918610735933"
                 className="hover:text-blue-400 transition-colors font-semibold"
               >
-                +91 86107 35933
+                +91 98436 14241
               </a>
             </li>
             <li className="flex items-center gap-3">
@@ -78,7 +78,7 @@ export const Footer = () => {
             <li className="flex items-center gap-3">
               <span className="text-green-500">💬</span>
               <a
-                href="https://wa.me/918610735933"
+                href="https://wa.me/919843614241?text=Hi MK Auto World, I am looking for spare parts."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-400 transition-colors font-bold"
@@ -117,7 +117,7 @@ export const Footer = () => {
               ✕ Close
             </button>
             <img
-              src="/logos/MKAutoWorldCard.jpeg"
+              src="/logos/MKAutoWorldCardFront.jpeg"
               alt="MK Auto World Card Full"
               className="w-full h-auto rounded-xl shadow-2xl ring-1 ring-white/20 animate-in zoom-in-95 duration-300"
             />

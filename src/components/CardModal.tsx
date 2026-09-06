@@ -22,7 +22,7 @@ export const CardModal = ({
               ✕ Close
             </button>
             <img
-              src="/logos/MKAutoWorldCard.jpeg"
+              src="/logos/MKAutoWorldCardFront.jpeg"
               alt="MK Auto World Card"
               className="w-full h-auto rounded-xl shadow-2xl animate-in zoom-in-95 duration-300"
             />

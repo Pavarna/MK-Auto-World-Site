@@ -38,10 +38,10 @@ export const Contact = () => {
           <div>
             <p className="text-gray-500">Call Us</p>
             <a
-              href="tel:+918610735933"
+              href="tel:+919843614241"
               className="text-2xl font-bold text-blue-600 hover:underline"
             >
-              +91 86107 35933
+              +91 98436 14241
             </a>
           </div>
 
@@ -60,7 +60,8 @@ export const Contact = () => {
           <div className="mt-4 flex flex-col items-center md:items-start">
             <p className="text-gray-500 text-sm">Prefer a faster response?</p>
             <a
-              href="https://wa.me/918610?text=Hi MK Auto World, I am looking for spare parts."
+              href="https://wa.me/919843614241?text=Hi MK Auto World, I am looking for spare parts."
+              target="_blank"
               className="text-green-600 font-bold flex items-center gap-2"
             >
               <span>💬</span> Chat on WhatsApp
@@ -87,7 +88,7 @@ export const Contact = () => {
                     id="name"
                     type="text"
                     name="name"
-                    placeholder="e.g. Rajesh Samant"
+                    placeholder="e.g. John Doe"
                     required
                     className="p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
                   />
@@ -123,7 +124,7 @@ export const Contact = () => {
                   name="message"
                   rows={4}
                   required
-                  placeholder="Please include Brand, Model, and Year (e.g. BMW 3 Series 2018 Brake Pads)"
+                  placeholder="Please include VIN (Chassis number), Brand, Model, and Parts Requirements"
                   className="w-full p-3 rounded-lg border-none ring-1 ring-gray-300 focus:ring-2 focus:ring-brandBlue outline-none bg-white text-gray-900"
                 ></textarea>
               </div>
